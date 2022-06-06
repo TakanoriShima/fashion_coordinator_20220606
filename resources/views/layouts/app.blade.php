@@ -10,7 +10,7 @@
     </head>
 
     <body>
-        <header class="mb-4">
+        <header>
             <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
               <!-- ホームへ戻るリンク。ブランドロゴなどを置く。 -->
               <a href="/" class="navbar-brand">P&amp;K</a>
@@ -68,9 +68,9 @@
         <div class="container">
             @include('commons.flash_message')
             @include('commons.error_messages')
-            @yield('content')
+            
         </div>
-        
+        @yield('content')
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
